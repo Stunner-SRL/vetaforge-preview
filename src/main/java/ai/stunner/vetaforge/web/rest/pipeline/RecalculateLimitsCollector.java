@@ -1,6 +1,5 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import ai.stunner.vetaforge.config.ApplicationProperties;
 import ai.stunner.vetaforge.domain.CollectionContainer;
 import ai.stunner.vetaforge.domain.FactoringRequest;
@@ -11,10 +10,6 @@ import ai.stunner.vetaforge.repository.CollectionContainerRepository;
 import ai.stunner.vetaforge.service.CollectionContainerService;
 import ai.stunner.vetaforge.service.FactoringRequestService;
 import ai.stunner.vetaforge.service.PipelineService;
-import ai.stunner.vetaforge.service.dto.core.AdherentDTO;
-import ai.stunner.vetaforge.web.rest.CollectionContainerResource;
-import org.apache.commons.lang.StringUtils;
-import org.apache.http.auth.AuthenticationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

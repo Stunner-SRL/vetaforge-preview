@@ -1,4 +1,4 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.Gson;
@@ -9,15 +9,10 @@ import ai.stunner.vetaforge.repository.CollectionContainerRepository;
 import ai.stunner.vetaforge.service.CollectionContainerService;
 import ai.stunner.vetaforge.service.FactoringRequestService;
 import ai.stunner.vetaforge.service.dto.AdherentEligibilityChecks;
-import ai.stunner.vetaforge.service.dto.CollectorRequest;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,10 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 import java.lang.reflect.Type;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

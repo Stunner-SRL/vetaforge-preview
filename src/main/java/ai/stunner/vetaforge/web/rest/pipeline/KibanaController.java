@@ -1,4 +1,4 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import ai.stunner.vetaforge.config.ApplicationProperties;
 import org.springframework.beans.factory.annotation.Autowired;

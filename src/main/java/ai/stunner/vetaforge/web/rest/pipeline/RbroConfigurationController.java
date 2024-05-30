@@ -1,4 +1,4 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import ai.stunner.vetaforge.domain.conf.RbroConfigurationProperties;
 import ai.stunner.vetaforge.domain.conf.RbroConfigurationPropertiesDTO;
@@ -8,9 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-
 
 @RestController
 @RequestMapping("/api/configuration")

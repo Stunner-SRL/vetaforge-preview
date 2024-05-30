@@ -1,4 +1,4 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import ai.stunner.vetaforge.config.ApplicationProperties;
 import ai.stunner.vetaforge.domain.FactoringRequest;

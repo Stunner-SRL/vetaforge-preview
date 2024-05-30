@@ -1,41 +1,25 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import com.google.gson.Gson;
 import ai.stunner.vetaforge.config.ApplicationProperties;
-import ai.stunner.vetaforge.domain.CollectionContainer;
-import ai.stunner.vetaforge.domain.FactoringRequest;
-import ai.stunner.vetaforge.domain.User;
-import ai.stunner.vetaforge.domain.enumeration.Status;
-import ai.stunner.vetaforge.service.CollectionContainerService;
-import ai.stunner.vetaforge.service.FactoringRequestService;
 import ai.stunner.vetaforge.service.InAppCall;
-import ai.stunner.vetaforge.service.UserService;
-import ai.stunner.vetaforge.service.dto.CollectorRequest;
 import ai.stunner.vetaforge.service.dto.MLDataCollectorService;
-import ai.stunner.vetaforge.service.dto.core.AdherentDTO;
-import ai.stunner.vetaforge.service.events.error.exceptions.ResourceNotFoundException;
-import ai.stunner.vetaforge.service.feign.CoreService;
 import ai.stunner.vetaforge.service.mail.EmailService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
 
 @RestController
 @RequestMapping("/api/flowable")

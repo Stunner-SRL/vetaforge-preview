@@ -1,4 +1,4 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ai.stunner.vetaforge.domain.CollectionContainer;

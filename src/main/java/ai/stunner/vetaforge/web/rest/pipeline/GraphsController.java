@@ -1,7 +1,6 @@
-package ai.stunner.vetaforge.web.rest.rbro;
+package ai.stunner.vetaforge.web.rest.pipeline;
 
 import com.google.gson.Gson;
-import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 import ai.stunner.vetaforge.config.ApplicationProperties;
 import ai.stunner.vetaforge.service.FactoringRequestService;
