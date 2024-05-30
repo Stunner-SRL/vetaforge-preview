@@ -14,8 +14,6 @@ To start your application in the dev profile, run:
 ./mvnw
 ```
 
-For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
-
 ## Building for production
 
 ### Packaging as jar
@@ -32,7 +30,6 @@ To ensure everything worked, run:
 java -jar target/*.jar
 ```
 
-Refer to [Using JHipster in production][] for more details.
 
 ### Packaging as war
 
@@ -80,7 +77,6 @@ For more information, refer to the [Code quality page][].
 
 ## Using Docker to simplify development (optional)
 
-You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
 
 For example, to start a mongodb database in a docker container, run:
 
@@ -106,20 +102,3 @@ Then run:
 ```
 docker-compose -f src/main/docker/app.yml up -d
 ```
-
-For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
-
-## Continuous Integration (optional)
-
-To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
-
-[jhipster homepage and latest documentation]: https://www.jhipster.tech
-[jhipster 7.0.1 archive]: https://www.jhipster.tech/documentation-archive/v7.0.1
-[doing microservices with jhipster]: https://www.jhipster.tech/documentation-archive/v7.0.1/microservices-architecture/
-[using jhipster in development]: https://www.jhipster.tech/documentation-archive/v7.0.1/development/
-[service discovery and configuration with the jhipster-registry]: https://www.jhipster.tech/documentation-archive/v7.0.1/microservices-architecture/#jhipster-registry
-[using docker and docker-compose]: https://www.jhipster.tech/documentation-archive/v7.0.1/docker-compose
-[using jhipster in production]: https://www.jhipster.tech/documentation-archive/v7.0.1/production/
-[running tests page]: https://www.jhipster.tech/documentation-archive/v7.0.1/running-tests/
-[code quality page]: https://www.jhipster.tech/documentation-archive/v7.0.1/code-quality/
-[setting up continuous integration]: https://www.jhipster.tech/documentation-archive/v7.0.1/setting-up-ci/
